@@ -6,6 +6,6 @@ define([], function() {
         title: "Hello World!",
         icon: "comment"
     }, function() {
-        dialogs.alert("Hello World", "Hey, this is an extension!");
+        dialogs.alert("Hello World", "Hey, this is a message from an add-on!");
     });
 });
