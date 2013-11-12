@@ -1,6 +1,6 @@
 define([], function() {
-    var commands = require("core/commands");
-    var dialogs = require("utils/dialogs");
+    var commands = codebox.require("core/commands");
+    var dialogs = codebox.require("utils/dialogs");
 
     commands.register("helloworld.sayhello", {
         title: "Hello World!",
