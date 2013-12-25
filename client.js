@@ -1,11 +1,13 @@
 define([], function() {
-    var commands = codebox.require("core/commands");
+    var menu = codebox.require("core/commands/menu");
     var dialogs = codebox.require("utils/dialogs");
 
-    commands.register("helloworld.sayhello", {
-        title: "Hello World!",
-        icon: "comment"
-    }, function() {
-        dialogs.alert("Hello World", "Hey, this is a message from an add-on!");
+    menu.register("helloworld", {
+        title: "Hello"
+    }).menuSection({
+        title: "Say Hello!",
+        action: function() {
+            dialogs.alert("Hello World", "Hey, this is a message from an add-on!");
+        }
     });
 });
