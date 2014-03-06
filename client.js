@@ -5,6 +5,8 @@ define([], function() {
     menu.register("helloworld", {
         title: "Hello"
     }).menuSection({
+        id: "helloworld.say",
+        category: "Helloworld",
         title: "Say Hello!",
         action: function() {
             dialogs.alert("Hello World", "Hey, this is a message from an add-on!");
