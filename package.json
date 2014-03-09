@@ -1,6 +1,6 @@
 {
     "name": "helloworld",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "title": "HelloWorld",
     "description": "Hello World addon for CodeBox",
     "homepage": "https://github.com/FriendCode/codebox-addon-helloworld",
