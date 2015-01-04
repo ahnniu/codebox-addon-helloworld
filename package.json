@@ -1,14 +1,14 @@
 {
     "name": "helloworld",
     "version": "1.0.0",
-    "description": "Hello World addon for CodeBox",
+    "description": "Hello",
     "main": "src/index",
     "engines": {
         "codebox": ">=1.0.0"
     },
     "dependencies": {
         "q": "1.0.1",
-        "lodash": "2.4.1",
+        "lodash": "2.4.1"
     },
     "packageDependencies": {
         "tabs": "CodeboxIDE/package-tabs"

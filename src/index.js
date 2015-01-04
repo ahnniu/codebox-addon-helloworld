@@ -7,9 +7,10 @@ define([], function() {
     // Cached methods
     var hello = _.memoize(function() {
         return rpc.execute("hello/say", {
+            "name": "Niu",
             "lang": "en"
-        }).then(function(res) {
-            return res;        
+        }).then(function(message) {
+            return message;        
         });
     });
 
@@ -19,8 +20,8 @@ define([], function() {
         title: "HelloWorld: Hello",
         run: function() {
             return hello()
-            .then(function(res) {
-                return dialogs.alert("Codebox: "+ res);
+            .then(function(message) {
+                return dialogs.alert("Codebox says: "+ message.message);
             });
         }
     });
