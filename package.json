@@ -1,19 +1,17 @@
 {
     "name": "helloworld",
-    "version": "0.2.0",
-    "title": "HelloWorld",
+    "version": "1.0.0",
     "description": "Hello World addon for CodeBox",
-    "homepage": "https://github.com/FriendCode/codebox-addon-helloworld",
-    "license": "Apache",
-    "author": {
-        "name": "Samy Pessé",
-        "email": "samypesse@gmail.com",
-        "url": "http://samypesse.fr"
-    },
-    "client": {
-        "main": "client"
-    },
+    "main": "src/index",
     "engines": {
-        "codebox": ">=0.7.0"
-    }
+        "codebox": ">=1.0.0"
+    },
+    "dependencies": {
+        "q": "1.0.1",
+        "lodash": "2.4.1",
+    },
+    "packageDependencies": {
+        "tabs": "CodeboxIDE/package-tabs"
+    },
+    "node": "lib/main.js"
 }
